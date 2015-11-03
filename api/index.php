@@ -1,8 +1,8 @@
 <?php
 //chdir('..');
-include_once './src/Epi.php';
-Epi::setPath('base', './src');
-Epi::init();
+include_once '../src/Epi.php';
+Epi::setPath('base', '../src');
+Epi::init('api');
 
 /* 라우팅 */
 getRoute()->get('/', 'showEndpoints');
