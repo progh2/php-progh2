@@ -6,7 +6,7 @@ Epi::init('api');
 
 /* 라우팅 */
 getRoute()->get('/', 'showEndpoints');
-getRoute()->get('/version', 'showVersion');
+getRoute()->get('/api/version', 'showVersion');
 
 
 getRoute()->run();
