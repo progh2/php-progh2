@@ -6,7 +6,7 @@ Epi::init('api');
 
 /* 라우팅 */
 getRoute()->get('/', 'showEndpoints');
-
+getRoute()->get('/version', 'showVersion');
 
 
 getRoute()->run();
@@ -29,6 +29,10 @@ function showEndpoints()
           <li><a href="/version">/version</a> -> (print the version of the api)</li>
           <li><a href="/users">/users</a> -> (print each user)</li>
         </ul>';
+}
+
+function showVersion(){
+	return 3.141592;
 }
 
 ?>
