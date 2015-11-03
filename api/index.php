@@ -1,8 +1,7 @@
 <?php
-header("Access-Control-Allow-Origin: *");
 chdir('..');
-include_once './src/Epi.php';
-Epi::setPath('base', './epi');
+include_once '../src/Epi.php';
+Epi::setPath('base', '../src');
 Epi::init('api');
 
 /* 라우팅 */
