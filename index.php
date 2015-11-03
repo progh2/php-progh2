@@ -2,7 +2,7 @@
 //chdir('..');
 include_once './src/Epi.php';
 Epi::setPath('base', './src');
-Epi::init('/');
+Epi::init();
 
 /* 라우팅 */
 getRoute()->get('/', 'showEndpoints');
