@@ -25,14 +25,14 @@ function showEndpoints()
 	echo '$str';
   echo '빠라바라밤 API <br>';
   echo '<ul>
-          <li><a href="/">/</a> -> (home)</li>
-          <li><a href="/version">/version</a> -> (print the version of the api)</li>
-          <li><a href="/users">/users</a> -> (print each user)</li>
+          <li><a href="/api/">/</a> -> (home)</li>
+          <li><a href="/api/version">/version</a> -> (print the version of the api)</li>
+          <li><a href="/api/users">/users</a> -> (print each user)</li>
         </ul>';
 }
 
 function showVersion(){
-	echo 3.141592;
+	echo "asfsdf";
 }
 
 ?>
