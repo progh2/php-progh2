@@ -32,7 +32,7 @@ function showEndpoints()
 }
 
 function showVersion(){
-	return 3.141592;
+	echo 3.141592;
 }
 
 ?>
