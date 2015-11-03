@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 chdir('..');
-include_once './epi/Epi.php';
+include_once './src/Epi.php';
 Epi::setPath('base', './epi');
 Epi::init('api');
 
