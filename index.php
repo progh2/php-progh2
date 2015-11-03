@@ -7,7 +7,7 @@ Epi::init('api');
 /* 라우팅 */
 getRoute()->get('/', 'showEndpoints');
 getRoute()->get('/version', 'showVersion');
-
+getRoute()->get('/users', 'getUserList', EpiApi::external);
 
 getRoute()->run();
 
@@ -17,6 +17,16 @@ getRoute()->run();
  * Define functions and classes which are executed by EpiCode based on the $_['routes'] array
  * ******************************************************************************************
  */
+
+function getUserList()
+{
+  return array(
+    array('name' => '이연재'),
+    array('name' => '허하진'),
+    array('name' => '윤서영')
+  );
+}
+
 
 function showEndpoints()
 {
